@@ -29,6 +29,7 @@
   --primary-color: #c5a47e;
   --background-color: #292929;
   --content-lines: #323232;
+  --title-color: #fff;
 }
 
 * {
@@ -103,14 +104,14 @@ h3,
 h4,
 h5,
 h6 {
-  color: #292929;
+  color: var(--title-color);
   font-weight: 400;
   font-family: "Teko", sans-serif;
 }
 .title {
   font-size: 60px;
   margin-bottom: 20px;
-  color: #292929;
+  color: var(--title-color);
   word-spacing: 3px;
   text-transform: uppercase;
 }
@@ -194,10 +195,10 @@ h6 {
   background: #fff;
 }
 ::-webkit-scrollbar-thumb {
-  background: #292929;
+  background: var(--title-color);
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #292929;
+  background: var(--title-color);
 }
 
 /* selection */
@@ -857,7 +858,7 @@ h6 {
 }
 .side-bar .tags li:hover,
 .side-bar .tags li a:hover {
-  background-color: #292929;
+  background-color: var(--title-color);
 }
 
 /* =======  Post  ======= */
@@ -1142,7 +1143,7 @@ textarea {
 .btn:hover {
   -webkit-transition-delay: 0.2s;
   transition-delay: 0.2s;
-  background-color: #292929;
+  background-color: var(--title-color);
 }
 .btn:hover span {
   -webkit-transition-delay: 0.2s;
