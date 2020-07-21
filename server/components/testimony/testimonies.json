@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_testimony_testimonies",
+  "info": {
+    "name": "Testimonies",
+    "icon": "angry"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "role": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

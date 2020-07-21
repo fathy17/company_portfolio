@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_about_abouts",
+  "info": {
+    "name": "About",
+    "icon": "allergies"
+  },
+  "options": {},
+  "attributes": {
+    "url_youtube_video": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "experience": {
+      "type": "integer"
+    }
+  }
+}

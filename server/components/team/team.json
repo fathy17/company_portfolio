@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_team_teams",
+  "info": {
+    "name": "Team",
+    "icon": "at"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "role": {
+      "type": "string"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "Social": {
+      "type": "component",
+      "repeatable": true,
+      "component": "social.social"
+    }
+  }
+}

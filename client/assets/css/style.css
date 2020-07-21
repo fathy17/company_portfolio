@@ -1043,6 +1043,7 @@ h6 {
 .contact .item .con {
   position: relative;
   z-index: 7;
+  text-align: center;
 }
 .contact .item h5 {
   font-size: 40px;
