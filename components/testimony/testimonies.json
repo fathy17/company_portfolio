@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_testimony_testimonies",
+  "info": {
+    "name": "Testimonies",
+    "icon": "angry"
+  },
+  "options": {},
+  "attributes": {
+    "backgroundImage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "Testimonies": {
+      "type": "component",
+      "repeatable": true,
+      "component": "testy.testimonies"
+    }
+  }
+}

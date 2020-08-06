@@ -1,0 +1,48 @@
+{
+  "kind": "singleType",
+  "collectionName": "contents",
+  "info": {
+    "name": "Content"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Services": {
+      "type": "component",
+      "repeatable": true,
+      "component": "service.services"
+    },
+    "About": {
+      "type": "component",
+      "repeatable": false,
+      "component": "about.about"
+    },
+    "Testimonies": {
+      "type": "component",
+      "repeatable": false,
+      "component": "testimony.testimonies"
+    },
+    "Team": {
+      "type": "component",
+      "repeatable": true,
+      "component": "team.team"
+    },
+    "SocialMedia": {
+      "type": "component",
+      "repeatable": true,
+      "component": "social.social"
+    },
+    "Contact": {
+      "type": "component",
+      "repeatable": false,
+      "component": "contact.contact"
+    },
+    "colorTheme": {
+      "type": "component",
+      "repeatable": false,
+      "component": "color.color-theme"
+    }
+  }
+}

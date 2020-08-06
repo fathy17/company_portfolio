@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_testy_testimonies",
+  "info": {
+    "name": "Testimonies",
+    "icon": "arrow-up"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "role": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

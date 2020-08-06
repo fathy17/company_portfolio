@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_color_color_themes",
+  "info": {
+    "name": "Color Theme",
+    "icon": "bong"
+  },
+  "options": {},
+  "attributes": {
+    "PrimaryColor": {
+      "type": "string"
+    },
+    "BackgroundColor": {
+      "type": "string"
+    },
+    "SidebarColor": {
+      "type": "string"
+    },
+    "ContentLines": {
+      "type": "string"
+    },
+    "TitleColor": {
+      "type": "string"
+    },
+    "ParagraphColor": {
+      "type": "string"
+    },
+    "TeamOverlay": {
+      "type": "string"
+    }
+  }
+}
