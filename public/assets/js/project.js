@@ -13,13 +13,6 @@ const converter = new showdown.Converter();
     .then((data) => {
       const { SocialMedia, colorTheme } = data;
 
-      //SOCIAL
-      const social = SocialMedia.map(
-        (item) => `
-      <a href="${item.link}"><i class="fab fa-${item.social}"></i></a>`
-      );
-      social.map((item) => (socialDOM.innerHTML += item));
-
       //COLORTHEME
       colorProperty.setProperty("--primary-color", colorTheme.PrimaryColor);
       colorProperty.setProperty(
@@ -31,6 +24,13 @@ const converter = new showdown.Converter();
       colorProperty.setProperty("--title-color", colorTheme.TitleColor);
       colorProperty.setProperty("--paragraph-color", colorTheme.ParagraphColor);
       colorProperty.setProperty("--team-overlay", colorTheme.TeamOverlay);
+
+      //SOCIAL
+      const social = SocialMedia.map(
+        (item) => `
+      <a href="${item.link}"><i class="fab fa-${item.social}"></i></a>`
+      );
+      social.map((item) => (socialDOM.innerHTML += item));
     })
     .catch((err) => console.log(err));
 

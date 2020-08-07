@@ -45,7 +45,7 @@ const colorProperty = document.documentElement.style;
             <a href="project.html#id=${item.id}">${item.type}</a>
           </span>
           <h5><a href="project.html#id=${item.id}">${item.title}</a></h5>
-          <a href="project.html"><i class="ti-arrow-right"></i></a>
+          <a href="project.html#id=${item.id}"><i class="ti-arrow-right"></i></a>
         </div>
       </div>`
       );
