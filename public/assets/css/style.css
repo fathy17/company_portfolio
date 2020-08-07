@@ -25,16 +25,6 @@
 
 /* =======  Global Properties  ======= */
 
-:root {
-  --primary-color: #95cc16;
-  --background-color: #463000;
-  --sidebar-color: #463000;
-  --content-lines: #2b1d0085;
-  --title-color: #fff;
-  --paragraph-color: #999;
-  --team-overlay: #95cc16a6;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -356,13 +346,13 @@ h6 {
 }
 
 /* ======= Services  ======== */
-.services .item {
+.services .item1 {
   padding: 40px 20px;
   position: relative;
   background-size: cover;
   background-position: 50% 0% !important;
 }
-.services .item:before {
+.services .item1:before {
   content: "";
   position: absolute;
   top: 0;
@@ -371,18 +361,18 @@ h6 {
   bottom: 0;
   background: rgba(12, 12, 12, 0.5);
 }
-.services .item:hover:after {
+.services .item1:hover:after {
   opacity: 0;
 }
-.services .item:hover h5,
-.services .item:hover p,
-.services .item:hover h5 .services .item:hover span {
+.services .item1:hover h5,
+.services .item1:hover p,
+.services .item1:hover h5 .services .item1:hover span {
   color: #fff;
 }
-.services .item:hover .numb {
+.services .item1:hover .numb {
   -webkit-text-stroke: 1px #fff;
 }
-.services .item:after {
+.services .item1:after {
   content: "";
   position: absolute;
   top: 0;
@@ -394,16 +384,16 @@ h6 {
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
 }
-.services .item .con {
+.services .item1 .con {
   position: relative;
   z-index: 7;
 }
-.services .item h5 {
+.services .item1 h5 {
   font-size: 40px;
   margin-bottom: 20px;
   color: var(--primary-color);
 }
-.services .item .numb {
+.services .item1 .numb {
   font-size: 75px;
   line-height: 75px;
   font-weight: 400;
@@ -413,7 +403,7 @@ h6 {
   opacity: 0.8;
   margin-bottom: 20px;
 }
-.services .item p {
+.services .item1 p {
   font-size: 15px;
 }
 .services .bg-1 {

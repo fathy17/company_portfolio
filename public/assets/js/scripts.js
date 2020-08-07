@@ -167,10 +167,8 @@ const colorProperty = document.documentElement.style;
       //SERVICES
       const services = Services.map(
         (item, index) => `
-        <div class="col-md-4">
-          <div class="item" style="background-image: url(${
-            item.image.formats.thumbnail.url
-          })">
+        <div class="item mb-50">
+          <div class="item1" style="background-image: url(${item.image.url})">
             <div class="con">
               <div class="numb">0${index + 1}</div>
               <h5>${item.title}</h5>
@@ -188,14 +186,16 @@ const colorProperty = document.documentElement.style;
           <h6 class="small-title">What We Do</h6>
           <h4 class="title">Our Services</h4>
         </div>
-        ${markupServices}`;
+       <div class="owl-carousel owl-theme">
+        ${markupServices}
+       </div>`;
 
       //ABOUT
       const converter = new showdown.Converter();
       aboutDOM.innerHTML = `
         <div class="col-md-6 mb-20">
           <h6 class="small-title">About Us</h6>
-          <h4 class="title">About Humen Studio</h4>
+          <h4 class="title">About Hument Studio</h4>
           ${converter.makeHtml(About.description)}
         </div>
         <div class="col-md-6 mb-20 image">
@@ -416,6 +416,27 @@ const colorProperty = document.documentElement.style;
           1000: {
             items: 3,
             autoplay: false,
+          },
+        },
+      });
+
+      //Service Carousel
+      $(".services .owl-carousel").owlCarousel({
+        loop: true,
+        margin: 30,
+        mouseDrag: true,
+        autoplay: false,
+        dots: true,
+        responsiveClass: true,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 2,
+          },
+          1000: {
+            items: 3,
           },
         },
       });
