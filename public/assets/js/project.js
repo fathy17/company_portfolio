@@ -1,6 +1,7 @@
 const projectItem = document.getElementById("project-item");
 const projectId = window.location.hash;
 const socialDOM = document.getElementById("social");
+const colorProperty = document.documentElement.style;
 
 const id = projectId.split("=")[1];
 
@@ -10,7 +11,7 @@ const converter = new showdown.Converter();
   fetch("/content")
     .then((res) => res.json())
     .then((data) => {
-      const { SocialMedia } = data;
+      const { SocialMedia, colorTheme } = data;
 
       //SOCIAL
       const social = SocialMedia.map(
@@ -18,7 +19,20 @@ const converter = new showdown.Converter();
       <a href="${item.link}"><i class="fab fa-${item.social}"></i></a>`
       );
       social.map((item) => (socialDOM.innerHTML += item));
-    });
+
+      //COLORTHEME
+      colorProperty.setProperty("--primary-color", colorTheme.PrimaryColor);
+      colorProperty.setProperty(
+        "--background-color",
+        colorTheme.BackgroundColor
+      );
+      colorProperty.setProperty("--sidebar-color", colorTheme.SidebarColor);
+      colorProperty.setProperty("--content-lines", colorTheme.ContentLines);
+      colorProperty.setProperty("--title-color", colorTheme.TitleColor);
+      colorProperty.setProperty("--paragraph-color", colorTheme.ParagraphColor);
+      colorProperty.setProperty("--team-overlay", colorTheme.TeamOverlay);
+    })
+    .catch((err) => console.log(err));
 
   fetch(`/projects/${id}`)
     .then((res) => res.json())
